@@ -1,0 +1,14 @@
+#sidebar-left {
+	border-color: #3a206b;
+  	border-style: solid;
+  	border-width: 4px;
+}
+
+#sidebar-right {
+	background: #3a206b;
+}
+
+#sidebar-left li.collapsed {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-links-small.png) right center no-repeat; /* LTR */
+  background-position: 135px 6px;
+}

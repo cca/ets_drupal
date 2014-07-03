@@ -1,0 +1,229 @@
+#sidebar-left {
+	border-color: #85b107;
+  	border-style: solid;
+  	border-width: 4px;
+  	padding-top: 15px;
+  	height: 450px;
+  	background-color: #85b107;
+  	margin-top: 52px;
+}
+
+#sidebar-left a {
+	margin: 0 25px;
+	padding: 4px 10px 5px 0;
+}
+
+#sidebar-left li.collapsed {
+  background: #85b107 url(/sites/all/themes/ets/images/arrow-right-news-small.png) right center no-repeat; /* LTR */
+  background-position: 135px 6px;
+}
+
+#sidebar-left a:hover{
+	background: #569200;
+	url(/sites/all/themes/ets/images/arrow-right-help-small-white.png) right center no-repeat;
+    background-position: 135px 6px;
+}
+
+#sidebar-right {
+	background: #85b107;
+}
+
+#newslist {
+	margin: 15px 0 0 0;
+}
+
+#newslist p	{
+	color: #333333;	
+	font-size: 10.5pt;
+}
+
+/*
+#newslist a:link {
+	color: #000000;
+	text-decoration: none;
+}
+
+#newslist a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+
+#newslist a:hover, #newslist a:visited:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+*/
+
+h2, h3, h4, h5, p, address {
+	margin: 0;
+	padding: 10px 10px 0;
+	color: #000000;
+}
+
+h1  {
+	padding: 0 0 0 10px;
+	margin-bottom: 0;
+	text-transform: uppercase;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #000000;
+}
+
+
+#newslist p.newsdate {
+	color: #8A9599;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	padding-top: 0;
+	margin-top: 0;
+}
+
+#newslist p.tags {
+	color: #8A9599;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+
+#newslist p.readmore {
+	clear: both;
+	float: right;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	font-size: 9pt;
+}
+
+p.graphic {
+	padding: 0;
+}
+
+hr {
+	border: none;
+	border-top: dotted 1px #000000;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+	height: 1px; 
+	clear: both;
+}
+
+/*content section*/
+
+#content,
+.sidebar-second #content {
+	float: left;
+    width: 700px;
+    margin-left: 20px;
+    margin-right: -720px; /* Negative value of #content's width + left margin. */
+}
+
+.two-sidebars #content {
+  	float: left;
+    width: 475px;
+    margin-top: 40px;
+    margin-left: 240px; /* The width of #sidebar-left */
+    margin-right: -715px; /* Negative value of #content's width + left margin. */
+}
+
+/*
+ * Second sidebar
+ */
+
+#sidebar-right  {
+    float: left;
+    background: #85b107;
+    width: 233px;
+    height: 676px;
+    margin-top: 31px;
+    margin-bottom: 0;
+    margin-left: 744px; /* Width of content + sidebar-left. */
+    margin-right: -980px; /* Negative value of #sidebar-right's width + left margin. */
+    padding: 0; /* DO NOT CHANGE. Add padding or margin to #sidebar-right-inner. */
+    color: #ffffff;
+}
+
+#sidebar-right p {
+	padding: 0;
+	margin: 0;
+}
+
+#email-signup {
+	font-family: "Arial", "Helvetica", sans-serif;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin: 30px 0 20px 30px;
+	padding: 0;
+	width: 200px;
+	height: 30px;
+}
+
+.border-line {
+	background-image: url(/sites/all/themes/ets/images/dotted_bar.png);
+  	background-repeat: repeat-x;
+  	width: 234px;
+  	height: 2px;
+  	overflow: hidden;
+  	position: relative;
+  	float: left;
+}
+
+#sidebar-right .form-submit {
+	width: 20px;
+	height: 19px;
+	background-image: url(/sites/all/themes/ets/images/search_arrow.jpeg);
+	border: none;
+	overflow: hidden;
+	font-size: 0;
+	float: right;
+	margin-top: -35px;
+	margin-right: 20px;
+	}
+
+.ets-name  {
+	vertical-align: bottom;
+	margin: 15px 0 0 8px;
+}
+
+.cca-name {
+	vertical-align: bottom;
+	margin: 15px 0 0 8px;
+}
+
+.ets-twitter {
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 0 25px;
+}
+
+.cca-twitter {
+	overflow: hidden;
+	padding: 0;
+	margin: 0 0 0 25px;
+}
+
+.twtr-ft {
+	display: none;
+}
+
+.twtr-hd {
+	display: none;
+}
+
+.twtr-tweets {
+	margin-top: 5px;
+    color: #ffffff;
+}
+
+.twtr-tweet-text {
+    font-size: 8pt;
+}
+
+.twtr-timestamp, .twtr-reply {
+	text-transform: uppercase;
+}  
+
+.twitter-divider {
+	background: #FFFFFF;
+	height: 3px;
+	border: none;
+	margin: 20px 15px 0 10px;
+}

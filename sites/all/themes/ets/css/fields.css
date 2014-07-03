@@ -1,0 +1,81 @@
+/* $Id: fields.css,v 1.3 2009/08/12 08:03:52 johnalbin Exp $ */
+
+/**
+ * @file
+ * Field Styling
+ */
+
+
+/*
+ * Field types
+ */
+
+.field /* Wrapper for any CCK field. */ {
+}
+
+.field-type-datetime /* Always use "datetime" when creating new CCK date fields. "date" and "datestamp" are legacy types. */ {
+}
+
+.field-type-filefield /* Field from filefield module */ {
+}
+
+.field-type-nodereference {
+}
+
+.field-type-number-decimal {
+}
+
+.field-type-number-float {
+}
+
+.field-type-number-integer {
+}
+
+.field-type-text {
+}
+
+.field-type-userreference {
+}
+
+
+/*
+ * Named fields
+ */
+
+.field-field-FIELDNAME /* Underscores in field name are replaced with dashes. */ {
+}
+
+/* Custom CSS for Project pages */
+
+.field-field-project-logo {
+	float:right;
+	padding:0 0 10px 10px;
+	margin:5px 10px 0 0;
+}
+.group-project-glance {
+	border:1px solid #993366;
+	border-radius:.8em;
+	padding: 10px;
+}
+.group-project-glance h2 {
+	margin:0;
+}
+.group-project-glance .field, 
+.group-project-participants .field {
+	margin-top:8px;
+}
+.field-field-project-deliverables .field-item {
+	display:list-item;
+	margin-left:20px;
+	padding-bottom:4px;
+}
+.group-project-glance .field-label-inline-first,
+.group-project-glance .field-label-inline {
+	display:inline-block;
+	width:170px;
+}
+.group-project-participants .field-label-inline-first,
+.group-project-participants .field-label-inline {
+	display:inline-block;
+	width:170px;
+}

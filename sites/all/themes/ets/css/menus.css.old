@@ -1,0 +1,338 @@
+/* $Id: nice_menus_default.css,v 1.10 2010/10/09 16:58:04 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+/* Javascript menu container */
+.region-navigation {
+	padding: 0;
+	margin-top: -12px;
+	float: right;
+	height: 15px;
+}
+
+ul#nice-menu-1.nice-menu.nice-menu-down.sf-js-enabled {
+	padding: 0;
+	margin: 0;
+	height: 15px;
+}
+/* End container */
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+ul.nice-menu li {
+  border: none;
+  float: left; /* LTR */
+  background-color: #FFFFFF;
+  font-family: Arial Narrow, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  width: auto;
+  letter-spacing: .08em;
+  padding-left: 10px;
+}
+
+ul.nice-menu a {
+  padding: 0.3em 5px 0.3em 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 12.5em;
+}
+
+/* News/Updates color styling */
+
+ul.nice-menu li.menu-340.menuparent {
+	background-image: url(/sites/all/themes/ets/images/news_slash.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+ul.nice-menu li.menu-340.menuparent:hover {
+	background-image: url(/sites/all/themes/ets/images/news_hover.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+li.menu-340 ul {
+ border: 5px solid #FF009E;
+}
+
+ul.nice-menu-down li.menu-340 li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-news.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-340 li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-news.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-340 ul li a:hover {
+  color: #FF009E;
+}
+
+/* Get Help color styling */
+
+ul.nice-menu li.menu-433.menuparent {
+	background-image: url(/sites/all/themes/ets/images/help_slash.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+ul.nice-menu li.menu-433.menuparent:hover {
+	background-image: url(/sites/all/themes/ets/images/help_hover.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+li.menu-433 ul {
+ border: 5px solid #05B5FF;
+}
+
+ul.nice-menu-down li.menu-433 li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-help.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-433 li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-help.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-433 ul li a:hover {
+  color: #05B5FF;
+}
+
+/* Quicklinks color styling */
+
+ul.nice-menu li.menu-317.menuparent {
+	background-image: url(/sites/all/themes/ets/images/links_slash.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+ul.nice-menu li.menu-317.menuparent:hover {
+	background-image: url(/sites/all/themes/ets/images/links_hover.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+li.menu-317 ul {
+ border: 5px solid #02FFA4;
+}
+
+ul.nice-menu-down li.menu-317 li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-links.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-317 li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-links.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-317 ul li a:hover {
+  color: #02FFA4;
+}
+
+/* About Us color styling */
+
+ul.nice-menu li.menu-436.menuparent {
+	background-image: url(/sites/all/themes/ets/images/about_slash.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+ul.nice-menu li.menu-436.menuparent:hover {
+	background-image: url(/sites/all/themes/ets/images/about_hover.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+li.menu-436 ul {
+ border: 5px solid #FFFC00;
+}
+
+ul.nice-menu-down li.menu-436 li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-about.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-436 li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-about.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-436 ul li a:hover {
+  color: #FFFC00;
+}
+
+/* Hours/Locations color styling */
+
+ul.nice-menu li.menu-318.menuparent {
+	background-image: url(/sites/all/themes/ets/images/hours_slash.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+ul.nice-menu li.menu-318.menuparent:hover {
+	background-image: url(/sites/all/themes/ets/images/hours_hover.jpg);
+  	background-repeat: no-repeat;
+  	background-position: 0 4px;
+}
+
+li.menu-318 ul {
+ border: 5px solid #FF9800;
+}
+
+ul.nice-menu-down li.menu-318 li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-hours.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-318 li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-hours.png) right center no-repeat; /* LTR */
+}
+
+ul.nice-menu-down li.menu-318 ul li a:hover {
+  color: #FF9800;
+}
+
+/******************************
+ VERTICAL (left/right) menus
+******************************/
+
+/* This is the default width of all vertical menus. */
+ul.nice-menu-right, ul.nice-menu-left,
+ul.nice-menu-right li, ul.nice-menu-left li {
+  width: 5.5em;
+}
+
+/* VERTICAL menus where submenus pop RIGHT (default). */
+ul.nice-menu-right ul {
+  width: 5.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right ul ul {
+  width: 12.5em;
+  left: 12.5em;
+  top: -1px;
+}
+
+ul.nice-menu-right li.menuparent,
+ul.nice-menu-right li li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right.png) right center no-repeat;
+}
+
+ul.nice-menu-right li.menuparent:hover,
+ul.nice-menu-right li li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right.png) right center no-repeat;
+}
+
+/* VERTICAL menus where submenus pop LEFT. */
+ul.nice-menu-left li ul {
+  width: 12.5em;
+  left: -12.65em;
+  top: -1px;
+}
+
+ul.nice-menu-left li ul li ul {
+  width: 12.5em;
+  left: -12.65em;
+  top: -1px;
+}
+
+ul.nice-menu-left li.menuparent,
+ul.nice-menu-left li li.menuparent {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-left.png) left center no-repeat;
+}
+
+ul.nice-menu-left li.menuparent:hover,
+ul.nice-menu-left li li.menuparent:hover {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-left.png) left center no-repeat;
+}
+
+ul.nice-menu-left a, ul.nice-menu-left ul a {
+  padding-left: 14px;
+}
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  	float: left; /* LTR */
+  	border: 0;
+}
+
+ul.nice-menu-down li {
+  	border: none;
+}
+
+ul.nice-menu-down li li {
+  	border-bottom: 1px dotted #666;
+	line-height: 30px;
+	height: 30px;
+	width: 155px;
+	font-size: 11px;
+	letter-spacing: .08em;
+	font-weight: normal;
+	padding-left: 0;
+  	margin-left: 0;
+}
+
+ul.nice-menu-down li li.last {
+	border: none;
+}
+
+ul.nice-menu-down ul {
+  	left: 0; /* LTR */
+  	width: 160px;
+  	padding: 10px;
+  	background-color: #FFFFFF;
+  	top: 15px;
+}
+
+ul.nice-menu-down ul li {
+  clear: both;
+}
+
+
+ul.nice-menu-down li ul li ul {
+  left: 15em; /* LTR */
+  top: -15px; /*Adjust this to move up/down position of right-expanded menus*/
+}
+
+ul.nice-menu-down .menuparent a {
+  padding-right: 15px; /* LTR */
+}
+
+ul.nice-menu-down li.menuparent {
+  background: #FFFFFF;
+}
+
+ul.nice-menu-down li.menuparent:hover {
+  background: #FFFFFF;
+}
+

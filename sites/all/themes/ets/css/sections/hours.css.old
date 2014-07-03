@@ -1,0 +1,14 @@
+#sidebar-left {
+	border-color: #3aa7c1;
+  	border-style: solid;
+  	border-width: 4px;
+}
+
+#sidebar-right {
+	background: #3aa7c1;
+}
+
+#sidebar-left li.collapsed {
+  background: #FFFFFF url(/sites/all/themes/ets/images/arrow-right-hours-small.png) right center no-repeat; /* LTR */
+  background-position: 135px 6px;
+}

@@ -1,0 +1,255 @@
+/* $Id: nice_menus_default.css,v 1.10 2010/10/09 16:58:04 add1sun Exp $ */
+/*
+  This is the default layout template for nice menus, and will provide
+  a starting point for the look of your menus. To customize, it's
+  recommended to create a custom CSS file using this file as a template,
+  then configure the module to use your custom CSS file
+  (this is done in the global settings tab of the theme administration.)
+
+  See README.txt and the handbook page (http://drupal.org/node/185543)
+  for more information on using the CSS.
+*/
+
+/******************************
+ Global CSS for ALL menu types
+******************************/
+
+/* Javascript menu container */
+.region-navigation {
+	padding: 0 0 0 10px;
+	margin: -12px 13px -6px 0;
+	float: right;
+	height: 23px;
+	background:#ccc;
+	border-bottom:6px solid #d6ebff;
+}
+
+ul#nice-menu-1.nice-menu.nice-menu-down.sf-js-enabled {
+	padding: 0;
+	margin: 0;
+	height: 15px;
+}
+/* End container */
+
+ul.nice-menu,
+ul.nice-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+ul.nice-menu li {
+  border: none;
+  float: left; /* LTR */
+  font-family: Arial Narrow, Verdana, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000000;
+  width: auto;
+/*  letter-spacing: .08em;  */
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
+ul.nice-menu a {
+  padding: 0.3em 5px 0.3em 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+ul.nice-menu ul {
+  top: 1.8em;
+  left: -1px; /* LTR */
+  margin-right: 0; /* LTR */
+}
+
+ul.nice-menu ul li {
+  width: 12.5em;
+}
+
+/******************************
+   Main Menus Section
+******************************/
+
+
+/* News/Updates color styling */
+
+
+ul.nice-menu li.menu-340.menuparent {
+}
+
+ul.nice-menu li.menu-340.menuparent:hover {
+	background: #85b107;
+}
+
+li.menu-340 ul {
+ border: 5px solid #85b107;
+ background: #85b107;
+}
+
+ul.nice-menu-down li.menu-340 ul li a:hover {
+  color: #ffffff;
+  background-color: #4d8300;
+}
+
+
+/* Get Help color styling */
+
+ul.nice-menu li.menu-433.menuparent {
+}
+
+ul.nice-menu li.menu-433.menuparent:hover {
+	background: #993366;
+}
+
+li.menu-433 ul {
+ border: 5px solid #993366;
+ background: #993366;
+}
+
+ul.nice-menu-down li.menu-433 ul li a:hover {
+  color: #ffffff;
+  background-color: #5a1e3c;
+}
+
+
+/* Projects color styling */
+
+
+ul.nice-menu li.menu-1239.menuparent {
+}
+
+ul.nice-menu li.menu-1239.menuparent:hover {
+	background: #DE3D0D;
+}
+
+li.menu-1239 ul {
+ border: 5px solid #DE3D0D;
+ background: #DE3D0D;
+}
+
+ul.nice-menu-down li.menu-1239 ul li a:hover {
+  color: #ffffff;
+  background-color: #AD310C;
+}
+
+
+/* Quicklinks color styling */
+
+ul.nice-menu li.menu-317.menuparent {
+}
+
+ul.nice-menu li.menu-317.menuparent:hover {
+	background: #3a206b;
+}
+
+li.menu-317 ul {
+ border: 5px solid #3a206b;
+ background: #3a206b;
+}
+
+ul.nice-menu-down li.menu-317 ul li a:hover {
+  color: #ffffff;
+  background-color: #150B30
+}
+
+/* About Us color styling */
+
+ul.nice-menu li.menu-436.menuparent {
+}
+
+ul.nice-menu li.menu-436.menuparent:hover {
+	background: #eb6f08;
+}
+
+li.menu-436 ul {
+ border: 5px solid #eb6f08;
+ background: #eb6f08;
+}
+
+ul.nice-menu-down li.menu-436 ul li a:hover {
+  color: #ffffff;
+  background-color: #b73500
+}
+
+/* Hours/Locations color styling */
+
+ul.nice-menu li.menu-318.menuparent {
+}
+
+ul.nice-menu li.menu-318.menuparent:hover {
+	background: #3aa7c1;
+}
+
+li.menu-318 ul {
+ border: 5px solid #3aa7c1;
+ background: #3aa7c1;
+}
+
+ul.nice-menu-down li.menu-318 ul li a:hover {
+  color: #ffffff;
+  background-color: #006D9B
+}
+
+
+/******************************
+ HORIZONTAL (down) menus
+******************************/
+
+ul.nice-menu-down {
+  	float: left; /* LTR */
+  	border: 0;
+}
+
+ul.nice-menu-down li {
+  	border: none;
+}
+
+ul.nice-menu-down li li {
+  	border-bottom: 1px dotted #fff;
+/*	line-height: 20px;
+	height: 20px;  */
+	padding: 2px 0px 2px 0px;
+	width: 160px;
+	font-size: 11px;
+	letter-spacing: .08em;
+	font-weight: normal;
+/* 	padding-left: 0;
+  	margin-left: 0; */
+}
+
+ul.nice-menu-down li ul li a {
+	color: #ffffff;
+}
+
+ul.nice-menu-down li li.last {
+	border: none;
+}
+
+ul.nice-menu-down ul {
+  	left: 0; /* LTR */
+  	width: 160px;
+  	padding: 5px;
+  	top: 23px;
+}
+
+
+/* These keep the title bar white when the child menu is hovered. */
+	ul.nice-menu li a:hover,
+	ul.nice-menu-down li.menuparent:hover a,
+	ul.nice-menu-down li.over a {
+	background: url(images/nav_bg_menuparent.png) repeat-x bottom;
+	color: #ffffff;
+	}
+
+	#block-nice_menus-1 ul.nice-menu-down .menuparent ul li a {
+	color: #ffffff;
+	}
+
+	#block-nice_menus-1 ul.nice-menu-down .menuparent ul li a:hover {
+	}
+
