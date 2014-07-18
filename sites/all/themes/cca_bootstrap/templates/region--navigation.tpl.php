@@ -26,7 +26,7 @@
  */
 ?>
 <?php if ($page['logo'] || $page['site_name'] || $page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-  <div class="navbar navbar-default">
+  <div class="navbar navbar-default navbar-fixed-top">
     <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
     <div class="navbar-header">
       <?php if ($page['logo']): ?>
@@ -50,8 +50,11 @@
     <div class="navbar-collapse collapse">
       <nav role="navigation">
         <?php print render($page['primary_nav']); ?>
-        <?php print render($page['secondary_nav']); ?>
-        <?php print $content; ?>
+        <ul class="menu nav navbar-nav secondary">
+          <li class="first leaf"><a href="https://www.cca.edu">CCA</a></li>
+        </ul>
+        <?php //print render($page['secondary_nav']); ?>
+        <?php //print $content; ?>
       </nav>
     </div>
     <?php endif; ?>
