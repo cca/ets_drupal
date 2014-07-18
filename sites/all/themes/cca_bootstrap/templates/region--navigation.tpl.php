@@ -26,7 +26,7 @@
  */
 ?>
 <?php if ($page['logo'] || $page['site_name'] || $page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-  <div class="navbar navbar-default navbar-fixed-top">
+  <div class="navbar navbar-default">
     <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
     <div class="navbar-header">
       <?php if ($page['logo']): ?>
