@@ -51,7 +51,7 @@
       <nav role="navigation">
         <?php print render($page['primary_nav']); ?>
         <ul class="menu nav navbar-nav secondary">
-          <li class="first leaf"><a href="https://www.cca.edu">CCA</a></li>
+          <li class="first leaf"><a href="https://www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a></li>
         </ul>
         <?php //print render($page['secondary_nav']); ?>
         <?php //print $content; ?>
