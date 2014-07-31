@@ -1,1 +1,96 @@
 // Insert your styling here.
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+@font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+/* cca logo icon font */
+@charset "UTF-8";
+
+@font-face {
+  font-family: "cca-logo";
+  src:url("../fonts/cca-logo.eot");
+  src:url("../fonts/cca-logo.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cca-logo.woff") format("woff"),
+    url("../fonts/cca-logo.ttf") format("truetype"),
+    url("../fonts/cca-logo.svg#cca-logo") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "cca-logo" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "cca-logo" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-c-logo:before {
+  /*color: #4B5B65;*/
+  content: "\e000";
+}
+.icon-a-logo:before {
+  /*color: #FF001F;*/
+  content: "\e001";
+}
+
+/* wireframing */
+.row-wireframe div {
+}
+.row-1 div {
+  margin-bottom: 2em;
+}
+.row-2 .col-wireframe div {
+  padding: 0.1em 1.5em 1.5em;
+  background-color: @gray-lighter;
+}
+.row-wireframe div p {
+}
+.col-wireframe div {
+}
+.col-wireframe img {
+  width: 100%;
+}
+.row-2 .resources div {
+  margin: 1.0em 0;
+}
+.resources > div:nth-of-type(1) {
+  margin-top: 0;
+}
+/* footer */
+.navbar-static-bottom {
+  margin-top: 2em;
+  padding: 1em 2em;
+  background-color: @gray-lighter;
+}
+.navbar-static-bottom li {
+  float: left;
+  margin-right: 2em;
+}
+.navbar-static-bottom li.pull-right {
+  margin-right: 0;
+}
