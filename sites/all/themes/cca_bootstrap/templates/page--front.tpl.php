@@ -29,7 +29,13 @@
       <h3>NEWS</h3>
       <div class="padding-base-horizontal">
         <h2>Lorem Ipsum Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl. Sed sed eros justo. Mauris lacinia auctor tincidunt. Ut aliquam suscipit velit, vel rutrum tortor imperdiet in. Vivamus ornare sem nec justo ornare, eget dictum mi facilisis. Nunc ut ligula fringilla, semper justo vitae, molestie neque. Morbi eu venenatis diam, at scelerisque nulla. Pellentesque et lacus varius, vulputate nulla ac, blandit nulla. Donec sollicitudin laoreet imperdiet. Sed porttitor dapibus neque, vitae porttitor erat pellentesque ac. Praesent et ligula sed ligula gravida commodo. Sed cursus eros id rutrum eleifend. Curabitur tincidunt adipiscing purus sed rhoncus. Maecenas et lorem in dolor feugiat tristique.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
+        
+        <h2>Lorem Ipsum Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
+
+        <h2>Lorem Ipsum Headline</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
       </div>
     </div>
     <div class="col-sm-4 col-wireframe resources">
