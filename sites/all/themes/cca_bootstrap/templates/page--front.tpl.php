@@ -26,7 +26,7 @@
   <div class="row row-wireframe row-2">
 
     <div class="col-sm-8 col-wireframe">
-      <h3>NEWS</h3>
+      <h3>ANNOUNCEMENTS</h3>
       <div class="padding-base-horizontal">
         <h2>Lorem Ipsum Headline</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
