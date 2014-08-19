@@ -1,7 +1,7 @@
-  <div class="navbar navbar-static-bottom">
-
-    <div class="row">
-    <div class="col-lg-12">
+<?php if ($content): ?>
+  <footer<?php print $attributes; ?>>
+    <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
+    <?php //print $content; ?>
     <ul class="list-unstyled">
       <li class="pull-right">
         help desk
@@ -19,7 +19,6 @@
       lorem ipsum link
       </li>
     </ul>
-    </div>
-    </div>
-
-</div>
+    <?php if ($content_attributes): ?></div><?php endif; ?>
+  </footer>
+<?php endif; ?>
