@@ -8,9 +8,12 @@
 
   <div class="row row-wireframe row-1">
 
-    <div class="col-sm-4 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-sm-4 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-sm-4 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
+    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
 
   </div>
 
