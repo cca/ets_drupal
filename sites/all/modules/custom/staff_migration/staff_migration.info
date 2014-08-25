@@ -1,0 +1,8 @@
+name = "Staff Migration"
+description = "Import Staff CSV File"
+package = Custom
+core = 7.x
+dependencies[] = migrate
+
+files[] = staff_migration.module
+files[] = staff_csv_import.inc

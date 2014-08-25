@@ -1,0 +1,90 @@
+<?php
+// define path to csv upload directory
+define("STAFF_UPLOAD_PATH", 'public://staff_migration/');
+
+/*
+ * You must implement hook_migrate_api(), setting the API level to 2, for
+ * your migration classes to be recognized by the Migrate module.
+ */
+function staff_migration_migrate_api() {
+  $api = array(
+    'api' => 2,
+  );
+  return $api;
+}
+
+function staff_migration_menu() {
+  // page to updload csv file
+  $items['admin/content/staff_directory'] = array(
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('staff_migration_admin_upload_form'),
+    'access arguments' => array('administer staff migration'),
+    'type' => MENU_NORMAL_ITEM,
+    'file' => 'staff_migration.admin.inc',
+  );
+  return $items;
+}
+
+function staff_migration_permission() {
+  return array(
+    'administer staff migration' => array(
+      'title' => t('Administer Staff Migration'),
+      'description' => t('Import CSV file to update Staff Directory'),
+    ),
+  );
+}
+
+function staff_migration_get_user($email, $phone, $first, $last) {
+  $user = user_load_by_mail($email);
+  // add user if they don't exist
+  if (!$user->uid) {
+    $user = staff_migration_add_user($email, $first, $last, 'staff');
+    watchdog('staff migration', 'added user: '.$first.' '.$last);
+  }
+  // add staff role if not set
+  if (!in_array('staff', $user->roles)) {
+    user_multiple_role_edit(array($user->uid), 'add_role', 35);
+    watchdog('staff migration', 'add staff role: '.$first.' '.$last);
+  }
+  // update phone
+  $obj = entity_metadata_wrapper('user', $user);
+  $obj->field_phone = $phone;
+  $obj->save();
+
+  return $user->uid;
+}
+
+function staff_migration_get_department($department) {
+  // map departments from datatel to web equivalent
+  $dept_array = array(
+    'Advancement/Alumni'=>'Advancement',
+    'Cntr for Art&Public Life'=>'Center for Art and Public Life',
+    'Educational Technology'=>'Educational Technology Services',
+    'Humanities & Sciences'=>'Humanities and Sciences',
+    'Shipping & Receiving'=>'Shipping and Receiving'
+  );
+  if (array_key_exists($department, $dept_array)) {
+    return $dept_array[$department];
+  }
+  return $department;
+}
+
+function staff_migration_add_user($email, $first, $last) {
+  $role_array = array(35=>'staff');
+  // get username from email
+  $email_parts = explode('@', $email);
+  $username = $email_parts[0];
+  // new user data
+  $new_user = array(
+    'name' => $username,
+    'pass' => user_password(),
+    'mail' => $email,
+    'init' => $email,
+    'status' => 1,
+    'field_first_name' => array('und' => array(array('value' => $first))),
+    'field_last_name' => array('und' => array(array('value' => $last))),
+    'roles' => $role_array,
+  );
+  // create user
+  return user_save(null, $new_user);
+}
