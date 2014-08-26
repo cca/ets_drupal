@@ -1,0 +1,9 @@
+name = Staff Directory View 2
+description = Staff Directory View try feature again
+core = 7.x
+package = Features
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:2
+features[views_view][] = staff_directory
+features_exclude[dependencies][ctools] = ctools
