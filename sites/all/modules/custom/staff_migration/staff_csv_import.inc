@@ -25,7 +25,7 @@ class StaffCSVMigration extends Migration {
     // add field mappings
     $this->addFieldMapping('title', 'Title');
     // cck fields
-    $this->addFieldMapping('field_user_reference', 'uid');
+    $this->addFieldMapping('field_profile_id', 'uid');
     // taxonomy terms
     //$this->addFieldMapping('taxonomy_vocabulary_12', 'term');
   }
