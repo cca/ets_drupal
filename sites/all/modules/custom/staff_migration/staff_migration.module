@@ -43,12 +43,15 @@ function staff_migration_get_user($email, $phone, $first, $last) {
   }
   // add staff role if not set
   if (!in_array('staff', $user->roles)) {
-    user_multiple_role_edit(array($user->uid), 'add_role', 35);
+    user_multiple_role_edit(array($user->uid), 'add_role', 6);
     watchdog('staff migration', 'add staff role: '.$first.' '.$last);
   }
   // update phone
   $obj = entity_metadata_wrapper('user', $user);
   $obj->field_phone = $phone;
+  // update first/last
+  $obj->field_first_name = $first;
+  $obj->field_last_name = $last;
   $obj->save();
 
   return $user->uid;
