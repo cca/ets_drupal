@@ -55,21 +55,13 @@
         <ul class="menu nav navbar-nav">
           <li class="expanded dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-            <div class="dropdown-menu">
-            <?php 
-              // embed drupal search
-              $block = module_invoke('search', 'block_view', 'search');
-              print render($block);
-            ?>
-            </div>
+            <div class="dropdown-menu"><?php print $search_box; ?></div>
           </li>
         </ul>
         <!-- cca logo -->
         <ul class="menu nav navbar-nav secondary">
           <li class="first leaf"><a href="https://www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a></li>
         </ul>
-        <?php //print render($page['secondary_nav']); ?>
-        <?php //print $content; ?>
       </nav>
     </div>
     <?php endif; ?>
