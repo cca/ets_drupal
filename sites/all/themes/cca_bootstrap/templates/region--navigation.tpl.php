@@ -47,19 +47,24 @@
       <?php endif; ?>
     </div>
     <?php if ($page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-    <div class="col-sm-3 col-md-3 pull-right">
-    <form class="navbar-form" role="search">
-    <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-        <div class="input-group-btn">
-            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-        </div>
-    </div>
-    </form>
-    </div>
     <div class="navbar-collapse collapse">
+
       <nav role="navigation">
         <?php print render($page['primary_nav']); ?>
+        <!-- search -->
+        <ul class="menu nav navbar-nav">
+          <li class="expanded dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
+            <div class="dropdown-menu">
+            <?php 
+              // embed drupal search
+              $block = module_invoke('search', 'block_view', 'search');
+              print render($block);
+            ?>
+            </div>
+          </li>
+        </ul>
+        <!-- cca logo -->
         <ul class="menu nav navbar-nav secondary">
           <li class="first leaf"><a href="https://www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a></li>
         </ul>
