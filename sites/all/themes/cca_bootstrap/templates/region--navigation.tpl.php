@@ -58,10 +58,11 @@
             <div class="dropdown-menu"><?php print $search_box; ?></div>
           </li>
         </ul>
-        <!-- cca logo -->
+        <!-- cca logo
         <ul class="menu nav navbar-nav secondary">
           <li class="first leaf"><a href="https://www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a></li>
         </ul>
+        -->
       </nav>
     </div>
     <?php endif; ?>
