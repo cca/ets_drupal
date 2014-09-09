@@ -113,6 +113,7 @@
 }
 
 /* footer */
+/*
 footer {
   margin-top: 2em;
   margin-bottom: -2em;
@@ -124,6 +125,32 @@ footer li {
 }
 footer li.pull-right {
   margin-right: 0;
+}
+*/
+
+.region-footer {
+  border: none;
+}
+.footer-tabs ul {
+  display: table;
+  table-layout: fixed;
+  padding: 0;
+  width: 100%;
+}
+.footer-tabs li {
+  border-right: 1px solid @gray;
+  display: table-cell;
+}
+.footer-tabs li:last-child {
+  border: none;
+}
+.footer-tabs a {
+  color: @gray;
+  display: block;
+  font-size: 1.2em;
+  margin: 0 5px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* views styles */
