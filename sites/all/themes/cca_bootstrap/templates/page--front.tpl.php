@@ -4,27 +4,14 @@
 
 <div class="main-container container">
 
-  <h3>GET STARTED</h2>
-
   <div class="row row-wireframe row-1">
-
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-    <div class="col-md-2 col-sm-4 col-xs-6 col-wireframe"><img src="/sites/all/themes/cca_bootstrap/assets/images/quicklink.png" /></div>
-
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>CCA Acounts</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Help Desk</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Hours</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Wireless</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Printers</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Equipment Checkout</h4></div>
   </div>
-
-  <!--
-  <div class="row">
-
-    <div class="col-md-8"><h3>NEWS</h3></div>
-    <div class="col-md-4"><h3>RESOURCES</h3></div>
-
-  </div>
-  -->
 
   <div class="row row-wireframe row-2">
 
