@@ -57,16 +57,17 @@
 }
 
 /* wireframing */
-.row-wireframe div {
-}
-.row-1 {
-}
 .row-1 div {
-  text-align: center;
-  margin-bottom: 2em;
+  padding: 0 5px; 
+  text-align: left;
 }
-.row-1 div img {
-  max-width: 323px;
+.row-1 div h4 {
+  background-color: @gray-light;
+  box-shadow: -3px 3px 0 @gray-lighter;
+  color: white;
+  padding: 30px 15px;
+  text-transform: uppercase;
+  width: 100%;
 }
 .row-2 .col-wireframe div {
   padding: 0.1em 1.5em 1.5em;
@@ -86,7 +87,17 @@
   margin-top: 0;
 }
 
-/* sidebar - hide left nav for small screen */
+/* sidebar menu-block 
+.menu-block-wrapper li.active a {
+  background-color: white;
+}
+.menu-block-wrapper li {
+  padding: 0;
+  margin: 0;
+}
+*/
+
+/* hide menu-block for small screen */
 @media (max-width: @screen-sm) {
   .region-sidebar-first {
     display: none;
