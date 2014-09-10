@@ -12,7 +12,6 @@
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>Printers</h4></div>
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>Equipment Checkout</h4></div>
   </div>
-
   <div class="row row-wireframe row-2">
 
     <div class="col-sm-8 col-wireframe">

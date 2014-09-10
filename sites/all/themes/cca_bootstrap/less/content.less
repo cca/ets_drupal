@@ -3,6 +3,7 @@
 // override luman bootswatch theme font
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
+@font-size-base:          14px;
 @font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 @font-family-serif:       Georgia, "Times New Roman", Times, serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
@@ -56,22 +57,40 @@
   content: "\e001";
 }
 
+/*typography*/
+h3 {
+  color: @gray;
+  letter-spacing: .1em;
+  font-weight: normal;
+}
+
 /* wireframing */
 .row-1 div {
-  padding: 0 5px; 
+  padding: 0 15px; 
   text-align: left;
 }
 .row-1 div h4 {
-  background-color: @gray-light;
+  background-color: @brand-success;
   box-shadow: -3px 3px 0 @gray-lighter;
   color: white;
+  font-weight: normal;
+  letter-spacing: .1em;
   padding: 30px 15px;
   text-transform: uppercase;
   width: 100%;
 }
+
+@media (max-width: @screen-sm) {
+  .row-1 div h4 {
+    padding: 15px 15px;
+    margin: .25em 0;
+    
+  }
+}
+
 .row-2 .col-wireframe div {
   padding: 0.1em 1.5em 1.5em;
-  background-color: @gray-lighter;
+  background-color: lighten(@brand-primary, 40%);
 }
 .row-wireframe div p {
 }
@@ -82,9 +101,17 @@
 }
 .row-2 .resources div {
   margin: 1.0em 0;
+  background-color: @brand-primary;
 }
+.row-2 .resources h4 {
+  padding-top: 1em;
+  color: white;
+  font-weight: normal;
+}
+
 .resources > div:nth-of-type(1) {
   margin-top: 0;
+
 }
 
 /* sidebar menu-block */
@@ -122,7 +149,7 @@
   .nav>li>.nav>li.active a:before {
     content: "\f111";
   }
-}
+
 /* hide menu-block for small screen */
 @media (max-width: @screen-sm) {
   .region-sidebar-first {
@@ -164,14 +191,14 @@ footer li.pull-right {
   width: 100%;
 }
 .footer-tabs li {
-  border-right: 1px solid @gray;
+  border-right: 1px solid @brand-primary;
   display: table-cell;
 }
 .footer-tabs li:last-child {
   border: none;
 }
 .footer-tabs a {
-  color: @gray;
+  color: @brand-primary;
   display: block;
   font-size: 1.2em;
   margin: 0 5px;
@@ -223,6 +250,7 @@ footer li.pull-right {
   font-family: open sans bold, sans-serif;
   color: #999999;
 }
+
 
 /* staff directory view */
 @media (min-width: @screen-sm) {
