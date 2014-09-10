@@ -178,6 +178,30 @@ footer li.pull-right {
   text-align: center;
   text-transform: uppercase;
 }
+/* responsive footer */
+@media (max-width: @screen-lg) {
+  .footer-tabs a {
+    font-size: 1em;
+  }
+}
+@media (max-width: @screen-md) {
+  .footer-tabs a {
+    font-size: 0.8em;
+  }
+}
+@media (max-width: @screen-sm) {
+  .footer-tabs ul {
+    display: inline;
+  }
+  .footer-tabs li {
+    display: inline;
+    border: none;
+  }
+  .footer-tabs a {
+    text-align: left;
+    display: inline;
+  }
+}
 
 /* views styles */
 .views-row {
