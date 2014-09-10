@@ -79,6 +79,15 @@ h3 {
   text-transform: uppercase;
   width: 100%;
 }
+
+@media (max-width: @screen-sm) {
+  .row-1 div h4 {
+    padding: 15px 15px;
+    margin: .25em 0;
+    
+  }
+}
+
 .row-2 .col-wireframe div {
   padding: 0.1em 1.5em 1.5em;
   background-color: lighten(@brand-primary, 40%);
@@ -105,13 +114,7 @@ h3 {
 
 }
 
-@media (max-width: @screen-sm) {
-  .row-1 div h4 {
-    padding: 15px 15px;
-    margin: .25em 0;
-    
-  }
-}
+
 
 /* sidebar menu-block 
 .menu-block-wrapper li.active a {
@@ -223,6 +226,7 @@ footer li.pull-right {
   font-family: open sans bold, sans-serif;
   color: #999999;
 }
+
 
 /* staff directory view */
 @media (min-width: @screen-sm) {
