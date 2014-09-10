@@ -18,3 +18,10 @@ function cca_bootstrap_preprocess_region(&$variables) {
   $block = module_invoke('search', 'block_view', 'search');
   $variables['search_box'] = render($block);
 }
+
+/**
+ * Overrides theme_menu_link().
+ */
+function cca_bootstrap_menu_link__menu_block(&$variables) {
+  return theme_menu_link($variables);
+}
