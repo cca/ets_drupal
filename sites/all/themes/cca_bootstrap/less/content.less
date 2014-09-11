@@ -116,6 +116,13 @@ h3 {
 
 /* sidebar menu-block */
 aside.region-sidebar-first {
+  .well {
+    background: none;
+    border: 1px solid @gray-light;
+  }
+  .nav>li>a {
+    font-weight: bold;
+  }
   /* font-icon styles */
   .nav>li>a:before {
     /* fa-circle-thin */
@@ -130,6 +137,10 @@ aside.region-sidebar-first {
   .nav>li.active a:before {
     /* fa-circle */
     content: "\f111 ";
+  }
+  .nav>li.expanded>a:before,
+  .nav>li.collapsed>a:before {
+    font-size: 1.2em;
   }
   .nav>li.expanded>a:before {
     /* fa-angle-down */
