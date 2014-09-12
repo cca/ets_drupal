@@ -18,7 +18,7 @@
   <div class="row row-wireframe row-2">
 
     <div class="col-sm-8 announcements">
-      <h3>ANNOUNCEMENTS</h3>
+      <h3>Announcements</h3>
       <div class="padding-base-horizontal">
         <h2>Lorem Ipsum Headline</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
@@ -31,7 +31,7 @@
       </div>
     </div><!-- /.announcements -->
     <div class="col-sm-4 resources">
-      <h3>RESOURCES</h3>
+      <h3>Resources</h3>
       <div><h4>Students</h4></div>
       <div><h4>Faculty & Staff</h4></div>
       <div><h4>Resources</h4></div>
