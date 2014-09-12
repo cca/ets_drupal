@@ -22,7 +22,8 @@
         your IP address is <?php echo $_SERVER["REMOTE_ADDR"]; ?>
       </li>
       <li>
-        cca.edu
+        <!-- cca logo -->
+        <a href="https://www.cca.edu"><i class="icon-c-logo"></i><i class="icon-c-logo"></i><i class="icon-a-logo"></i></a>
       </li>
       <li>
       </li>
