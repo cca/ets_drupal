@@ -1,43 +1,40 @@
 /* styles for main content region, includeing views, nodes, homepage, etc */
 
-/* wireframing */
-.row-1 div {
-  padding: 0 15px; 
-  text-align: left;
-}
-.row-1 div h4 {
-  background-color: @brand-success;
-  box-shadow: -3px 3px 0 @gray-lighter;
-  color: white;
-  font-weight: normal;
-  letter-spacing: .1em;
-  padding: 30px 15px;
-  text-transform: uppercase;
-  width: 100%;
-}
-@media (max-width: @screen-sm) {
-  .row-1 div h4 {
-    padding: 15px 15px;
-    margin: .25em 0;
-    
+/* @group homepage */
+.quicklinks {
+  div {
+    padding: 0 15px; 
+    text-align: left;
+  }
+  h4 {
+    background-color: @brand-success;
+    box-shadow: -3px 3px 0 @gray-lighter;
+    color: white;
+    font-weight: normal;
+    letter-spacing: .1em;
+    padding: 30px 15px;
+    text-transform: uppercase;
+    width: 100%;
   }
 }
-.row-2 .col-wireframe div {
+@media (max-width: @screen-sm) {
+  .quicklinks div h4 {
+    padding: 15px 15px;
+    margin: .25em 0;
+  }
+}
+.resources div,
+.announcements div {
   padding: 0.1em 1.5em 1.5em;
+}
+.announcements div {
   background-color: lighten(@brand-primary, 40%);
 }
-.row-wireframe div p {
-}
-.col-wireframe div {
-}
-.col-wireframe img {
-  width: 100%;
-}
-.row-2 .resources div {
+.resources div {
   margin: 1.0em 0;
   background-color: @brand-primary;
 }
-.row-2 .resources h4 {
+.resources h4 {
   padding-top: 1em;
   color: white;
   font-weight: normal;
@@ -45,33 +42,32 @@
 .resources > div:nth-of-type(1) {
   margin-top: 0;
 }
-/* end wireframing */
+/* @end */
 
 
-/* views styles */
+/* @group views */
 
+/* default views row margin */
 .views-row {
   margin: 1em 0;
 }
 
 /* news view */
-.view-news-and-updates .views-field-title { 
-  font-size: @font-size-h3;
+.view-news-and-updates {
+  .views-row {
+    margin: 2em 0;
+  }
+  .views-field-title { 
+    font-size: @font-size-h3;
+  }
+  .views-field-created .field-content{
+    text-transform: uppercase;
+    font-size: .85em;
+    letter-spacing: .15em;
+    font-family: open sans bold, sans-serif;
+    color: #999999;
+  }
 }
-
-.view-news-and-updates .views-row {
-  margin: 2em 0;
-}
-
-.view-news-and-updates .views-field-created .field-content{
-  text-transform: uppercase;
-  font-size: .85em;
-  letter-spacing: .15em;
-  font-family: open sans bold, sans-serif;
-  color: #999999;
-}
-
-
 /* staff directory view */
 @media (min-width: @screen-sm) {
   .view-staff-directory .user-picture {
@@ -82,4 +78,4 @@
 .view-staff-directory .views-field-field-last-name {
   font-weight: bold;
 }
-
+/* @end */
