@@ -1,5 +1,6 @@
 /* global styles, bootswatch overrides, and top nav */
 
+
 // override luman bootswatch theme font
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
 
@@ -58,4 +59,11 @@ h3 {
 }
 .dropdown-toggle i {
   font-weight: bold;
+}
+
+/* fix admin-toolbar for bootstrap */
+#admin-toolbar *,#admin-toolbar *:before,#admin-toolbar *:after {
+  -webkit-box-sizing:content-box;
+  -moz-box-sizing:content-box;
+  box-sizing:content-box
 }
