@@ -39,4 +39,6 @@
 
   </div>
 </div><!-- /#main-container -->
+<div id="push"></div>
+</div><!-- /#wrap -->
 <?php print render($page['footer']); ?>
