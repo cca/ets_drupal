@@ -4,15 +4,16 @@
 
 <div class="main-container container">
 
-  <h3>Educational Technology Services</h3>
+  <h3>Take me to...</h3>
 
   <div class="row quicklinks">
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>CCA Acounts</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Help Desk</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Hours</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Wireless</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Printers</h4></div>
+    
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>My CCA User Account</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Help Desk & How-Tos</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Moodle</h4></div>
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>Equipment Checkout</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Service Hours</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Printing</h4></div>
   </div><!-- /.quicklinks -->
 
   <div class="row row-wireframe row-2">
