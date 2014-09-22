@@ -25,6 +25,7 @@
  * @ingroup themeable
  */
 ?>
+<div id="wrap">
 <?php if ($page['logo'] || $page['site_name'] || $page['primary_nav'] || $page['secondary_nav'] || $content): ?>
   <div class="navbar navbar-default navbar-static-top">
     <?php if ($content_attributes): ?><div<?php print $content_attributes; ?>><?php endif; ?>
