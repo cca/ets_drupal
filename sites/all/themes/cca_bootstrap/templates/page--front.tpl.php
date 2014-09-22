@@ -4,9 +4,10 @@
 
 <div class="main-container container">
 
-  <h3>Educational Technology Services</h3>
+  <h3>Take me to...</h3>
 
   <div class="row quicklinks">
+    
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>CCA Acounts</h4></div>
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>Help Desk</h4></div>
     <div class="col-xs-12 col-sm-6 col-md-4"><h4>Hours</h4></div>
