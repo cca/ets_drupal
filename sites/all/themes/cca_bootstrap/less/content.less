@@ -2,10 +2,13 @@
 
 /* @group homepage */
 
+
+
 body.front h3 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.5em;
+  color: @gray;
 }
 
 @media (max-width: @screen-sm) {
@@ -21,6 +24,7 @@ body.front h3 {
     text-align: left;
   }
   h4 {
+    /* border: 2px solid @brand-success; */
     background-color: @brand-success;
     box-shadow: -3px 3px 0 lighten(@brand-success, 35%);
     color: white;
@@ -30,12 +34,11 @@ body.front h3 {
     margin: 0 0 15px 0;
     text-transform: uppercase;
     width: 100%;
-    border-radius: 5px;
+    /* border-radius: 5px;*/    
   }
 
   h4:hover, :focus {
     background-color: darken(@brand-success, 15%);
-    box-shadow: -3px 3px 0 lighten(@brand-success, 15%);
   }
 }
 @media (max-width: @screen-sm) {
