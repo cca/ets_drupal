@@ -8,12 +8,12 @@
 
   <div class="row quicklinks">
     
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>My CCA User Account</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Help Desk & How-Tos</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Moodle</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Equipment Checkout</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Service Hours</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4>Printing</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-accounts"></i>My CCA User Account</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-helpdesk"></i>Help Desk & How-Tos</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-moodle"></i>Moodle</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-equipment"></i>Equipment Checkout</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-hours"></i>Service Hours</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-printer"></i>Printing</h4></div>
   </div><!-- /.quicklinks -->
 
   <div class="row row-wireframe row-2">
@@ -25,7 +25,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
         
         <h2>Lorem Ipsum Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
+        <p>onsectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
 
         <h2>Lorem Ipsum Headline</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
