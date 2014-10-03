@@ -18,31 +18,55 @@ body.front h3 {
 }
 
 .quicklinks {
-  div {
+  div div {
+    background-color: @brand-success;
+    box-shadow: -3px 3px 0 lighten(@brand-success, 35%);
+    padding: 20px 0px 20px 20px;
+    margin: 0 0 15px 0;
+    width: 100%;
     /*padding: 0em 15px;
     margin: 0; 
     text-align: left;*/
   }
   h4 {
-    background-color: @brand-success;
-    box-shadow: -3px 3px 0 lighten(@brand-success, 35%);
     color: white;
     font-weight: normal;
     letter-spacing: .1em;
-    padding: 20px 25px;
-    margin: 0 0 15px 0;
     text-transform: uppercase;
-    width: 100%;
-    vertical-align: center;
-    /* border-radius: 5px;*/    
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
   }
 
-  h4:hover, :focus {
-    background-color: darken(@brand-success, 15%);
-  }
+  .quicklinks i {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  padding: 0;
+  margin: 0px 10px 0px 0px;
+  vertical-align: bottom;
+  text-align: center;
 }
+
+  /*h4:hover, :focus {
+    background-color: darken(@brand-success, 15%);
+  }*/
+}
+@media (max-width: @screen-lg) {
+ .quicklinks h4{
+  font-size: @font-size-h4 * .85;
+ }
+}
+
+
 @media (max-width: @screen-sm) {
-  .quicklinks div h4 {
+  .quicklinks div div {
     padding: 15px 15px;
     margin: .25em 0;
   }

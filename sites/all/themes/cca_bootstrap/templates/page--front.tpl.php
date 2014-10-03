@@ -8,12 +8,12 @@
 
   <div class="row quicklinks">
     
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-accounts"></i>My CCA User Account</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-helpdesk"></i>Help Desk & How-Tos</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-moodle"></i>Moodle</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-equipment"></i>Equipment Checkout</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-hours"></i>Service Hours</h4></div>
-    <div class="col-xs-12 col-sm-6 col-md-4"><h4><i class="quick icon-printer"></i>Printing</h4></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-accounts"></i><h4>My CCA User Account</h4></div></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-helpdesk"></i><h4>Help Desk & How-Tos</h4></div></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-moodle"></i><h4>Moodle</h4></div></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-equipment"></i><h4>Equipment Checkout</h4></div></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-hours"></i><h4>Service Hours</h4></div></div>
+    <div class="col-xs-12 col-sm-6 col-md-4"><div><i class="icon-printer"></i><h4>Printing</h4></div></div>
   </div><!-- /.quicklinks -->
 
   <div class="row row-wireframe row-2">
