@@ -14,25 +14,33 @@
   display: table;
   table-layout: fixed;
   padding: 0;
+  margin: 0;
   width: 100%;
 }
 .footer-tabs li {
-  border-right: 1px solid @brand-primary;
+  /* border-right: 1px solid @brand-primary;*/
   display: table-cell;
 }
 .footer-tabs li:last-child {
   border: none;
 }
 .footer-tabs a {
-  color: @brand-primary;
+  color: @brand-success;
   display: block;
   font-size: 1em;
   letter-spacing: .15em;
   font-weight: 600;
-  margin: 0 5px;
+  margin: 0 10px;
   text-align: center;
   text-transform: uppercase;
 }
+
+footer a:hover {
+  text-decoration: none;
+  font-weight: bold;
+  color: @brand-primary;
+}
+
 /* responsive footer */
 @media (max-width: @screen-lg) {
   .footer-tabs a {
