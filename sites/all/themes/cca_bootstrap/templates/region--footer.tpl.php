@@ -5,11 +5,11 @@
     <div class="row footer-tabs">
       <div class="col-xs-12">
       <ul>
-        <li><a>Moodle</a></li>
-        <li><a>WebAdvisor</a></li>
-        <li><a>Google Apps</a></li>
-        <li><a>Vault</a></li>
-        <li><a>Libraries</a></li>
+        <li><a href="http://moodle.cca.edu/">Moodle</a></li>
+        <li><a href="http://webadvisor.cca.edu/">WebAdvisor</a></li>
+        <li><a href="http://google.cca.edu/">Google Apps</a></li>
+        <li><a href="https://vault.cca.edu/">Vault</a></li>
+        <li><a href="http://libraries.cca.edu/">Libraries</a></li>
         <li><a>Workday</a></li>
         <li><a>Lynda</a></li>
         <li><a>Papercut</a></li>
