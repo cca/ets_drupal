@@ -1,0 +1,56 @@
+From f67007938fed9cd6be18a63639fec9ec5a35f785 Mon Sep 17 00:00:00 2001
+From: Mark Carver <mark.carver@me.com>
+Date: Thu, 19 Jun 2014 12:35:27 -0500
+Subject: [PATCH] Issue #2282541 by Mark Carver: Fixed Hide summary in text.js
+ not working in jQuery 1.9+.
+
+---
+ modules/field/modules/text/text.js | 24 ++++++++++++++----------
+ 1 file changed, 14 insertions(+), 10 deletions(-)
+
+diff --git a/modules/field/modules/text/text.js b/modules/field/modules/text/text.js
+index f3ae894..d8b0a7b 100644
+--- a/modules/field/modules/text/text.js
++++ b/modules/field/modules/text/text.js
+@@ -23,24 +23,28 @@ Drupal.behaviors.textSummary = {
+         }
+ 
+         // Setup the edit/hide summary link.
+-        var $link = $('<span class="field-edit-link">(<a class="link-edit-summary" href="#">' + Drupal.t('Hide summary') + '</a>)</span>').toggle(
+-          function () {
++        var $link = $('<span class="field-edit-link">(<a class="link-edit-summary" href="#">' + Drupal.t('Hide summary') + '</a>)</span>');
++        var $a = $link.find('a');
++        var toggleClick = true;
++        $link.bind('click', function (e) {
++          if (toggleClick) {
+             $summary.hide();
+-            $(this).find('a').html(Drupal.t('Edit summary')).end().appendTo($fullLabel);
+-            return false;
+-          },
+-          function () {
++            $a.html(Drupal.t('Edit summary'));
++            $link.appendTo($fullLabel);
++          }
++          else {
+             $summary.show();
+-            $(this).find('a').html(Drupal.t('Hide summary')).end().appendTo($summaryLabel);
+-            return false;
++            $a.html(Drupal.t('Hide summary'));
++            $link.appendTo($summaryLabel);
+           }
+-        ).appendTo($summaryLabel);
++          e.preventDefault();
++          toggleClick = !toggleClick;
++        }).appendTo($summaryLabel);
+ 
+         // If no summary is set, hide the summary field.
+         if ($(this).find('.text-summary').val() == '') {
+           $link.click();
+         }
+-        return;
+       });
+     });
+   }
+-- 
+1.9.1
+
