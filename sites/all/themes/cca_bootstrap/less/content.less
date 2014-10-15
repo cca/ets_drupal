@@ -78,15 +78,19 @@ body p a:hover{
     margin: .25em 0;
   }
 }
-.resources div,
-.announcements div {
-  padding: 0.1em 1.5em 1.5em;
+
+// homepage announcements block
+.announcements > div {
+  border-top: 2px solid lighten(@brand-primary, 20%);
 }
-.announcements div {
-  background-color: lighten(@brand-primary, 40%);
+.announcements .title a {
+  font-weight: bold;
 }
+
+// homepage resources block
 .resources div {
   margin: 1.0em 0;
+  padding: 0.1em 1.5em 1.5em;
   background-color: @brand-primary;
 }
 .resources div:hover, .resources div:focus {
