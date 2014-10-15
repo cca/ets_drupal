@@ -98,17 +98,15 @@
 
 
   <!-- Nav tabs -->
-<ul class="nav nav-pills" role="tablist">
-  <li class="active"><a href="#glance" role="tab" data-toggle="tab">At a Glance</a></li>
-  <li><a href="#summary" role="tab" data-toggle="tab">Summary</a></li>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#summary" role="tab" data-toggle="tab">Project Summary</a></li>
   <li><a href="#details" role="tab" data-toggle="tab">Details</a></li>
   <li><a href="#participants" role="tab" data-toggle="tab">Participants</a></li>
 </ul>
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="glance"><?php print render($content['group_project_glance']); ?></div>
-  <div class="tab-pane" id="summary"><?php print render($content['group_project_summary']); ?></div>
+  <div class="tab-pane active" id="summary"><?php print render($content['group_project_glance']); print render($content['group_project_summary']); ?></div>
   <div class="tab-pane" id="details"><?php print render($content['group_project_details']); ?></div>
   <div class="tab-pane" id="participants"><?php print render($content['group_project_participants']); ?></div>
 </div>

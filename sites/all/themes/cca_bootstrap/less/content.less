@@ -78,15 +78,24 @@ body p a:hover{
     margin: .25em 0;
   }
 }
-.resources div,
-.announcements div {
-  padding: 0.1em 1.5em 1.5em;
+
+// homepage announcements block
+.announcements > div {
+  background-color: lighten(@brand-primary, 60%);
+  padding: 0 1.5em;
 }
-.announcements div {
-  background-color: lighten(@brand-primary, 40%);
+.announcements a {
+  color: black;
 }
+.announcements .title a {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+// homepage resources block
 .resources div {
   margin: 1.0em 0;
+  padding: 0.1em 1.5em 1.5em;
   background-color: @brand-primary;
 }
 .resources div:hover, .resources div:focus {
