@@ -21,16 +21,19 @@
     <div class="col-sm-8 announcements">
       <h3>Announcements</h3>
       <div class="padding-base-horizontal">
+
+    <?php if ($page['home_news']): ?>
+      <?php print render($page['home_news']); ?>
+    <?php endif; ?>
+
+    <!--
         <h2>Lorem Ipsum Headline</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
         
-        <h2>Lorem Ipsum Headline</h2>
-        <p>onsectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
-
-        <h2>Lorem Ipsum Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
+        -->
       </div>
     </div><!-- /.announcements -->
+
     <div class="col-sm-4 resources">
       <h3>Resources</h3>
       <div><h4>Students</h4></div>
