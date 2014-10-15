@@ -22,15 +22,10 @@
       <h3>Announcements</h3>
       <div class="padding-base-horizontal">
 
-    <?php if ($page['home_news']): ?>
-      <?php print render($page['home_news']); ?>
-    <?php endif; ?>
+      <?php if ($page['home_news']): ?>
+        <?php print render($page['home_news']); ?>
+      <?php endif; ?>
 
-    <!--
-        <h2>Lorem Ipsum Headline</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget ullamcorper dui, a varius nisl.</p>
-        
-        -->
       </div>
     </div><!-- /.announcements -->
 
