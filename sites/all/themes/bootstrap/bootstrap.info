@@ -1,7 +1,13 @@
 name = Bootstrap
 description = Built to use Bootstrap, a sleek, intuitive, and powerful front-end framework for faster and easier web development.
 core = 7.x
-php = 5.3.0
+
+
+;;;;;;;;;;;;;;;;;;;;;
+;; SimplyTest.me
+;;;;;;;;;;;;;;;;;;;;;
+
+simplytest_dependencies[] = jquery_update
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -30,15 +36,6 @@ settings[bootstrap_button_size] = ''
 settings[bootstrap_button_colorize] = 1
 settings[bootstrap_button_iconize] = 1
 
-; Grid
-; --------------
-settings[bootstrap_grid_columns] = 12
-settings[bootstrap_grid_class_prefix] = 'col-sm'
-settings[bootstrap_region_grid-sidebar_first] = 3
-settings[bootstrap_region_grid-sidebar_second] = 3
-settings[bootstrap_region_grid_dynamic-content][sidebar_first] = 'sidebar_first'
-settings[bootstrap_region_grid_dynamic-content][sidebar_second] = 'sidebar_second'
-
 ; Images
 ; --------------
 settings[bootstrap_image_shape] = ''
@@ -66,7 +63,7 @@ settings[bootstrap_navbar_inverse] = 0
 ; Region Wells
 ; --------------
 settings[bootstrap_region_well-navigation] = ''
-settings[bootstrap_region_well-header] = 'well'
+settings[bootstrap_region_well-header] = ''
 settings[bootstrap_region_well-highlighted] = ''
 settings[bootstrap_region_well-help] = ''
 settings[bootstrap_region_well-content] = ''
@@ -78,6 +75,11 @@ settings[bootstrap_region_well-footer] = ''
 ; --------------
 settings[bootstrap_anchors_fix] = 1
 settings[bootstrap_anchors_smooth_scrolling] = 1
+
+; Forms
+; --------------
+settings[bootstrap_forms_required_has_error] = 0
+settings[bootstrap_forms_has_error_value_toggle] = 1
 
 ; Popovers
 ; --------------
@@ -112,7 +114,7 @@ settings[bootstrap_tooltip_container] = 'body'
 
 ; Advanced
 ; --------------
-settings[bootstrap_cdn] = 3.1.1
+settings[bootstrap_cdn] = 3.2.0
 settings[bootstrap_bootswatch] = ''
 
 ; Global
@@ -165,14 +167,31 @@ exclude[css][] = 'modules/user/user.css'
 
 
 ;;;;;;;;;;;;;;;;;;;;;
-;; SimplyTest.me
+;; Breakpoints
 ;;;;;;;;;;;;;;;;;;;;;
+breakpoints[screen-xs-max] = (max-width: 767px)
+breakpoints[screen-sm-min] = (max-width: 768px)
+breakpoints[screen-sm-max] = (max-width: 991px)
+breakpoints[screen-md-min] = (max-width: 992px)
+breakpoints[screen-md-max] = (max-width: 1199px)
+breakpoints[screen-lg-min] = (min-width: 1200px)
+; Multipiers
+multipliers[screen-xs-max][] = 1.5x
+multipliers[screen-xs-max][] = 2x
+multipliers[screen-sm-min][] = 1.5x
+multipliers[screen-sm-min][] = 2x
+multipliers[screen-sm-max][] = 1.5x
+multipliers[screen-sm-max][] = 2x
+multipliers[screen-md-min][] = 1.5x
+multipliers[screen-md-min][] = 2x
+multipliers[screen-md-max][] = 1.5x
+multipliers[screen-md-max][] = 2x
+multipliers[screen-lg-min][] = 1.5x
+multipliers[screen-lg-min][] = 2x
 
-simplytest_dependencies[] = jquery_update
-
-; Information added by Drupal.org packaging script on 2014-07-15
-version = "7.x-3.1-beta1+8-dev"
+; Information added by Drupal.org packaging script on 2014-10-02
+version = "7.x-3.1-beta2+19-dev"
 core = "7.x"
 project = "bootstrap"
-datestamp = "1405460329"
+datestamp = "1412250629"
 
