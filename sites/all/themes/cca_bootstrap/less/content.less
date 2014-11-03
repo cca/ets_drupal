@@ -118,6 +118,7 @@ body p a:hover{
     padding: 0.1em 1.5em;
   }
 }
+/*end*/
 
 // homepage resources block
 .resources {
@@ -164,16 +165,36 @@ body p a:hover{
 .view-news-and-updates {
   .views-row {
     margin: 2em 0;
+    display: block;
+    float: left;
   }
   .views-field-title { 
     font-size: @font-size-h3;
   }
+
+  .views-field-title a:hover{ 
+    text-decoration: none;
+  }
+
   .views-field-created .field-content{
     text-transform: uppercase;
     font-size: .85em;
     letter-spacing: .15em;
     font-family: open sans bold, sans-serif;
     color: #999999;
+  }
+
+  .views-field-body .field-content{
+    width:80%;
+    float: left;
+    display: inline-block;
+  }
+
+  .views-field-body .field-content img{
+    display: inline-block;
+    float: left;
+    width: 100px:
+    height: 100px;
   }
 }
 /* staff directory view */
