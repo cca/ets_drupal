@@ -36,7 +36,7 @@
         </a>
       <?php endif; ?>
       <?php if ($page['site_name']): ?>
-        <a class="name navbar-brand" href="<?php print $page['front_page']; ?>" title="<?php print t('Home'); ?>"> ETS @ CCA</a>
+        <a class="name navbar-brand" href="<?php print $page['front_page']; ?>" title="<?php print t('Home'); ?>"> ETS @ <i class="nav-c-logo"></i><i class="nav-c-logo"></i><i class="nav-a-logo"></i></a>
       <?php endif; ?>
       <?php if ($page['primary_nav'] || $page['secondary_nav'] || $content): ?>
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">

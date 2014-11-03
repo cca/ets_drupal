@@ -89,18 +89,36 @@ body p a:hover{
 
 // homepage announcements block
 .announcements {
+ p {
+  color: darken(@brand-primary, 15%);
+ }
+
   a {
-    color: black;
+    color: @brand-success;
   }
+
+  a:hover {
+    color: darken(@brand-success, 15%);
+  }
+
   .title a {
+    color: @brand-primary;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    text-decoration:none;
   }
+
+  .title a:hover {
+    text-decoration: none;
+    color: darken(@brand-primary, 15%);
+  }
+
   .block > div {
-    background-color: lighten(@brand-primary, 60%);
+    background-color: lighten(@brand-primary, 55%);
     padding: 0.1em 1.5em;
   }
 }
+/*end*/
 
 // homepage resources block
 .resources {
@@ -116,6 +134,7 @@ body p a:hover{
     color: white;
     font-size: 1.5em;
     line-height: 35px;
+    letter-spacing: .1em;
   }
   .nav > li > a {
   }
@@ -146,16 +165,36 @@ body p a:hover{
 .view-news-and-updates {
   .views-row {
     margin: 2em 0;
+    display: block;
+    float: left;
   }
   .views-field-title { 
     font-size: @font-size-h3;
   }
+
+  .views-field-title a:hover{ 
+    text-decoration: none;
+  }
+
   .views-field-created .field-content{
     text-transform: uppercase;
     font-size: .85em;
     letter-spacing: .15em;
     font-family: open sans bold, sans-serif;
     color: #999999;
+  }
+
+  .views-field-body .field-content{
+    width:80%;
+    float: left;
+    display: inline-block;
+  }
+
+  .views-field-body .field-content img{
+    display: inline-block;
+    float: left;
+    width: 100px:
+    height: 100px;
   }
 }
 /* staff directory view */
