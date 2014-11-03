@@ -89,15 +89,32 @@ body p a:hover{
 
 // homepage announcements block
 .announcements {
+ p {
+  color: darken(@brand-primary, 15%);
+ }
+
   a {
-    color: black;
+    color: @brand-success;
   }
+
+  a:hover {
+    color: darken(@brand-success, 15%);
+  }
+
   .title a {
+    color: @brand-primary;
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.25em;
+    text-decoration:none;
   }
+
+  .title a:hover {
+    text-decoration: none;
+    color: darken(@brand-primary, 15%);
+  }
+
   .block > div {
-    background-color: lighten(@brand-primary, 60%);
+    background-color: lighten(@brand-primary, 55%);
     padding: 0.1em 1.5em;
   }
 }
@@ -116,6 +133,7 @@ body p a:hover{
     color: white;
     font-size: 1.5em;
     line-height: 35px;
+    letter-spacing: .1em;
   }
   .nav > li > a {
   }
