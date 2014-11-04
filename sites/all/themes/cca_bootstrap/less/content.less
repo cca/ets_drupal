@@ -147,7 +147,7 @@ body p a:hover{
 
 /* @group node styles */
 
-// project node view
+// project node
 body.node-type-project {
   .field-name-field-project-logo {
     float: right;
@@ -171,6 +171,27 @@ body.node-type-project {
     }
   }
 }
+
+// news node
+body.node-type-blog {
+  .submitted {
+    text-transform: uppercase;
+    font-size: .85em;
+    font-style: normal;
+    letter-spacing: .15em;
+    font-family: open sans bold, sans-serif;
+    color: #999999;
+  }
+  .field-type-taxonomy-term-reference {
+    padding-top: 1em;
+  }
+  // don't show author blog link
+  article.node footer {
+    display: none;
+  }
+}
+
+
 /* @end */
 
 
