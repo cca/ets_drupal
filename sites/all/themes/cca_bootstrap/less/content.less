@@ -148,8 +148,28 @@ body p a:hover{
 /* @group node styles */
 
 // project node view
-.field-name-field-project-logo {
-  float: right;
+body.node-type-project {
+  .field-name-field-project-logo {
+    float: right;
+  }
+  .field-name-field-project-scope .field-label,
+  .field-name-field-project-businesscase .field-label,
+  .field-name-field-project-summary .field-label,
+  .field-name-field-deliverables .field-label {
+    padding-top: 0.5em;
+    font-size: 1.5em;
+  }
+  div.project-stats,
+  div#participants {
+    display: table;
+    .field {
+      display: table-row;
+      .field-label, .field-items {
+        padding: 0.2em 0.5em;
+        display: table-cell;
+      }
+    }
+  }
 }
 /* @end */
 
