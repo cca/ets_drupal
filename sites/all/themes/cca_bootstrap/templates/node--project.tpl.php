@@ -106,8 +106,11 @@
 
 <!-- Tab panes -->
 <div class="tab-content">
-  <div class="tab-pane active" id="summary"><?php print render($content['group_project_glance']); print render($content['group_project_summary']); ?></div>
-  <div class="tab-pane" id="details"><?php print render($content['group_project_details']); ?></div>
+  <div class="tab-pane active" id="summary"><?php print render($content['group_project_glance']); ?></div>
+  <div class="tab-pane" id="details">
+    <div class="project-stats"><?php print render($content['group_project_stats']); ?></div>
+    <?php print render($content['group_project_details']); ?>
+  </div>
   <div class="tab-pane" id="participants"><?php print render($content['group_project_participants']); ?></div>
 </div>
 
