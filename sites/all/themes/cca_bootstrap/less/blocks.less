@@ -2,7 +2,7 @@
 
 /* primary region -- menu-block */
 aside.region-sidebar-first {
-  .block:first-child h2.block-title {
+  .block h2.block-title {
     border-bottom: 1px solid #333;
     color: #333;
     font-size: 1.3em;
@@ -50,6 +50,19 @@ aside.region-sidebar-first {
   }
   .nav > li>.nav > li.active a {
     font-weight: bold;
+  }
+  /* views category list styles */
+  .block-views {
+    ul {
+      list-style-type: none;
+      margin-left: -30px;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      li a:hover, li a:focus {
+        text-decoration: none;
+        color: @brand-primary;
+      }
+    }
   }
 }
 
