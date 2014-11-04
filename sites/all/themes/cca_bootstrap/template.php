@@ -5,6 +5,10 @@
  * template.php
  */
 
+function cca_bootstrap_preprocess_node(&$variables) {
+	$variables['submitted'] = date("F j, Y g:i a", $variables['created']);
+}
+
 function cca_bootstrap_preprocess_html(&$variables) {
   // Load font-awesome
   drupal_add_css('//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', array(
