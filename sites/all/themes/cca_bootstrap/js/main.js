@@ -18,11 +18,13 @@
 			$labCheck.show();
 
 			if (campusValue == 'Oakland') {
-				($sfBuildingOptions, $sfLabOptions).hide();
+				$sfBuildingOptions.hide();
+        $sfLabOptions.hide();
 				$oakBuildingOptions.show();
         $labOptions = $oakLabOptions;
 			} else {
-				($oakBuildingOptions, $oakLabOptions).hide();
+				$oakBuildingOptions.hide();
+        $oakLabOptions.hide();
 				$sfBuildingOptions.show();
         $labOptions = $sfLabOptions;
 			}
