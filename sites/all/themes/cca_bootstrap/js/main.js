@@ -12,7 +12,7 @@
 
   	$('.webform-component--campus, .webform-component--lab-check').change(function() {
 
-			var campusValue = $( "input:radio:checked" ).val();
+			var campusValue = $( ".webform-component--campus input:radio:checked" ).val();
       var labValue = $(".webform-component--lab-check input:radio:checked").val();
 
 			$labCheck.show();
