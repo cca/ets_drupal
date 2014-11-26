@@ -101,7 +101,7 @@
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#summary" role="tab" data-toggle="tab">Project Summary</a></li>
   <li><a href="#details" role="tab" data-toggle="tab">Details</a></li>
-  <li><a href="#participants" role="tab" data-toggle="tab">Participants</a></li>
+  <li><a href="#project-participants" role="tab" data-toggle="tab">Participants</a></li>
 </ul>
 
 <!-- Tab panes -->
@@ -111,7 +111,7 @@
     <div class="project-stats"><?php print render($content['group_project_stats']); ?></div>
     <?php print render($content['group_project_details']); ?>
   </div>
-  <div class="tab-pane" id="participants"><?php print render($content['group_project_participants']); ?></div>
+  <div class="tab-pane" id="project-participants"><?php print render($content['group_project_participants']); ?></div>
 </div>
 
   <?php
