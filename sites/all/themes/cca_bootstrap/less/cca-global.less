@@ -1,5 +1,6 @@
 // global styles and overrides
 
+
 // force footer to bottom on short pages
 html, body {
   height: 100%;
@@ -104,6 +105,11 @@ html, body {
 }
 
 //typography
+
+// reduce h2 and h3 font size
+@font-size-h2:            floor((@font-size-base * 1.7)); // ~30px
+@font-size-h3:            ceil((@font-size-base * 1.4)); // ~24px
+
 h3 {
   color: @gray;
   letter-spacing: .1em;
