@@ -56,7 +56,7 @@
         <ul class="menu nav navbar-nav">
           <li class="expanded dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-            <div class="dropdown-menu"><?php print $search_box; ?></div>
+            <div class="dropdown-menu search"><?php print $search_box; ?></div>
           </li>
         </ul>
       </nav>
