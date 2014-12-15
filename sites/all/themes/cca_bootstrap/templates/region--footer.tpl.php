@@ -31,3 +31,9 @@
     <?php if ($content_attributes): ?></div><?php endif; ?>
   </footer>
 <?php endif; ?>
+
+<!-- check for currently active breakpoint -->
+<div class="device-xs visible-xs"></div>
+<div class="device-sm visible-sm"></div>
+<div class="device-md visible-md"></div>
+<div class="device-lg visible-lg"></div>

@@ -55,8 +55,12 @@ stylesheets[all][] = css/style.css
  scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
 
+; breakpoint detection -- source: https://github.com/maciej-gurban/responsive-bootstrap-toolkit
+scripts[] = 'js/bootstrap-toolkit.min.js'
+
 ; custom javascript
 scripts[] = 'js/main.js'
+scripts[] = 'js/resize.js'
 
 ;
 ; ; Disable BootstrapCDN if using Bootstrap source files in your sub-theme.
