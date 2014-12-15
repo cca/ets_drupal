@@ -48,7 +48,7 @@
       <?php endif; ?>
     </div>
     <?php if ($page['primary_nav'] || $page['secondary_nav'] || $content): ?>
-    <div class="navbar-collapse collapse pull-right">
+    <div class="navbar-collapse collapse">
 
       <nav role="navigation">
         <?php print render($page['primary_nav']); ?>
