@@ -10,7 +10,7 @@
         <li><a href="http://google.cca.edu/">Google Apps</a></li>
         <li><a href="https://vault.cca.edu/">Vault</a></li>
         <li><a href="http://libraries.cca.edu/">Libraries</a></li>
-        <li><a href="https://proxy.cca.edu/login?url=http://www.lynda.com/">Lynda</a></li>
+        <li><a href="https://technology.cca.edu/lyndacom-online-training">Lynda</a></li>
         <li><a href="https://print.cca.edu:9192/app;jsessionid=1eiu3gekbh7bm?service=external/Home&sp=Suser">Papercut</a></li>
         <!--<li><a>Workday</a></li>-->
       </ul>
